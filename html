@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📅 Event Scheduler</h1>
+        <p class="subtitle">Calculate daily hours needed for your upcoming events</p>
+
+        <div class="input-area">
+            <div class="event-input">
+                <h3>Event 1</h3>
+                <div class="input-group">
+                    <label for="nameEvents1">Name:</label>
+                    <input type="text" id="nameEvents1" placeholder="e.g., Project Deadline">
+                </div>
+                <div class="input-group">
+                    <label for="daysLeft1">Days left:</label>
+                    <input type="number" id="daysLeft1" min="1" placeholder="7">
+                </div>
+                <div class="input-group">
+                    <label for="workHours1">Total hours needed:</label>
+                    <input type="number" id="workHours1" min="0" step="0.5" placeholder="20">
+                </div>
+            </div>
+
+            <div class="event-input">
+                <h3>Event 2</h3>
+                <div class="input-group">
+                    <label for="nameEvents2">Name:</label>
+                    <input type="text" id="nameEvents2" placeholder="e.g., Exam Preparation">
+                </div>
+                <div class="input-group">
+                    <label for="daysLeft2">Days left:</label>
+                    <input type="number" id="daysLeft2" min="1" placeholder="14">
+                </div>
+                <div class="input-group">
+                    <label for="workHours2">Total hours needed:</label>
+                    <input type="number" id="workHours2" min="0" step="0.5" placeholder="30">
+                </div>
+            </div>
+
+            <div class="event-input">
+                <h3>Event 3</h3>
+                <div class="input-group">
+                    <label for="nameEvents3">Name:</label>
+                    <input type="text" id="nameEvents3" placeholder="e.g., Presentation">
+                </div>
+                <div class="input-group">
+                    <label for="daysLeft3">Days left:</label>
+                    <input type="number" id="daysLeft3" min="1" placeholder="10">
+                </div>
+                <div class="input-group">
+                    <label for="workHours3">Total hours needed:</label>
+                    <input type="number" id="workHours3" min="0" step="0.5" placeholder="15">
+                </div>
+            </div>
+
+            <div class="event-input">
+                <h3>Event 4</h3>
+                <div class="input-group">
+                    <label for="nameEvents4">Name:</label>
+                    <input type="text" id="nameEvents4" placeholder="e.g., Projects">
+                </div>
+                <div class="input-group">
+                    <label for="daysLeft4">Days left:</label>
+                    <input type="number" id="daysLeft4" min="1" placeholder="10">
+                </div>
+                <div class="input-group">
+                    <label for="workHours4">Total hours needed:</label>
+                    <input type="number" id="workHours4" min="0" step="0.5" placeholder="18">
+                </div>
+            </div>
+        </div>
+
+        <button id="calculate" class="calculate-btn">Calculate Schedule</button>
+
+        <div class="results-container">
+            <h2>📊 Daily Schedule</h2>
+            <div class="result-group">
+                <label for="numEvents1Result">Event 1:</label>
+                <input type="text" id="numEvents1Result" disabled>
+                <span>hours/day</span>
+            </div>
+            <div class="result-group">
+                <label for="numEvents2Result">Event 2:</label>
+                <input type="text" id="numEvents2Result" disabled>
+                <span>hours/day</span>
+            </div>
+            <div class="result-group">
+                <label for="numEvents3Result">Event 3:</label>
+                <input type="text" id="numEvents3Result" disabled>
+                <span>hours/day</span>
+            </div>
+            <div class="result-group">
+                <label for="numEvents4Result">Event 4:</label>
+                <input type="text" id="numEvents4Result" disabled>
+                <span>hours/day</span>
+            </div>
+            <div class="total-hours">
+                <p id="total-message"></p>
+            </div>
+        </div>
+
+        <div class="resources">
+            <h3>📚 Helpful Resources</h3>
+            <ul>
+                <li><a href="https://registrar.gmu.edu/calendars/spring_2025/" target="_blank">Timelines Page</a></li>
+                <li><a href="https://registrar.gmu.edu/calendars/" target="_blank">Academic Calendar</a></li>
+                <li><a href="https://www.gmu.edu/" target="_blank">GMU Homepage</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
